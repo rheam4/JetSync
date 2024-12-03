@@ -122,4 +122,4 @@ print("Adjustment Schedule:")
 for entry in plan['schedule']:
     print(f"{entry['day']}: Bedtime: {entry['bedtime']}:00, Waketime: {entry['waketime']}:00")
 
-print(f"\nTime Difference: {plan['v']}")
+print(f"\nTime Difference: {plan['time_difference']}")
