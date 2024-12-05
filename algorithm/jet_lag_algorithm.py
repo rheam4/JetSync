@@ -217,15 +217,15 @@ class JetLagAdjuster:
 
 
 # Example Usage
-departure = "2024-12-03 23:00"
-arrival = "2024-12-04 20:00"
-origin_tz = "-5"  # NY
-destination_tz = "4"  # Dubai
+# departure = "2024-12-03 23:00"
+# arrival = "2024-12-04 20:00"
+# origin_tz = "-5"  #fl NY
+# destination_tz = "4"  # Dubai
 
-# departure = "2024-12-03 16:00"
-# arrival = "2024-12-04 23:00"
-# origin_tz = "-8"  # SF
-# destination_tz = "8"  # TW
+departure = "2024-12-03 16:00"
+arrival = "2024-12-04 23:00"
+origin_tz = "-8"  # SF
+destination_tz = "8"  # TW
 
 adjuster = JetLagAdjuster(departure, arrival, origin_tz, destination_tz)
 plan = adjuster.generate_optimal_schedule()
